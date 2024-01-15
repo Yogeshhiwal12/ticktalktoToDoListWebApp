@@ -1,4 +1,3 @@
-// TodoApp.js
 import React, { useState, useEffect } from "react";
 import { getFirestore, collection, addDoc, onSnapshot, updateDoc, deleteDoc, doc } from "firebase/firestore";
 import { initializeApp } from "firebase/app";
