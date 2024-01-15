@@ -1,0 +1,95 @@
+// TodoApp.scss
+$primary-color: #3498db;
+$secondary-color: #2c3e50;
+$accent-color: #e74c3c;
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ecf0f1;
+  color: $secondary-color;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.todo-app {
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+
+  h1 {
+    color: $primary-color;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  div {
+    display: flex;
+    margin-bottom: 20px;
+
+    input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid $secondary-color;
+      border-radius: 4px;
+      outline: none;
+    }
+
+    button {
+      padding: 10px;
+      background-color: $primary-color;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      outline: none;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      input {
+        margin-right: 10px;
+      }
+
+      span {
+        flex: 1;
+        text-decoration: none;
+        color: $secondary-color;
+      }
+
+      button {
+        padding: 8px;
+        background-color: $accent-color;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        outline: none;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: darken($accent-color, 10%);
+        }
+      }
+    }
+  }
+}
